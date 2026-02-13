@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Designer OS Ultra</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+<h3>Designer OS</h3>
+<button onclick="toggleTheme()">Theme</button>
+<div id="datetime"></div>
+</div>
+
+<div class="main">
+
+<div class="card">
+<h3>30 Day Timeline</h3>
+<div id="calendar" class="grid"></div>
+</div>
+
+<div class="card">
+<h3>Tasks</h3>
+<div id="tasks"></div>
+</div>
+
+<div class="card">
+<h3>Focus Timer</h3>
+<div id="timer">60:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+
+<canvas id="chart" width="300" height="150"></canvas>
+
+</div>
+
+<div class="bottomnav">
+<div>Dashboard</div>
+<div>Tasks</div>
+<div>Stats</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
